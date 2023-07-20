@@ -1,9 +1,113 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Team 10A</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+        
+        <!-- linking css file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <h1>Team 10A</h1>
-        <p>Does your website explain the problem? Showcase the ideas you have explored? The idea you chose to puruse?</p>
-        <p>Does your website have a reflection page on the all project? This page should include (links to) your portfolio of work, e.g. weekly pitch videos, daily communication with your partner, daily team briefs/survey, etc.</p>
-        <p>Does your website have a "proud" page explaining why you are proud of the work you did?</p>
+        <!-- navbar -->
+        <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+        
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" href="#" id="navBrand">Team 10A</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="nav-link-home" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link-brainstorm" href="brainstorm.html">Brainstorm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link-solution" href="solution.html">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link-reflection" href="reflection.html">Reflections</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+           
+        <!-- main banner -->
+        <!-- https://getbootstrap.com/docs/5.3/layout/containers/ -->
+        <!-- https://getbootstrap.com/docs/5.3/layout/grid/ -->
+        <!-- main banner -->
+        <section class="bgimage" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Welcome</h2>
+                    <p class="hero_desc">This is Team 10A's OIP documentary website.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section-->
+        <section id="about">
+            <div class="container mt-4 pt-4">
+                <h1 class="text-center">About</h1>
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+                    </div>
+
+                    <div class="col-lg-8">
+                        <p> 
+                            The Curio project (trycurio.com) is a web-based, affordable educational platform
+                            designed to teach undergraduate students programming, particularly in web
+                            development, UI/UX design, and AI/ML. The platform leverages the user's own
+                            smartphone or laptop via Web-Bluetooth and can access device sensors and internetbased
+                            services. Curio promotes rapid learning and easy project sharing, facilitating
+                            quick iterations and widespread dissemination of student work.
+                        </p>
+                        
+                    </div>
+                </div>
+        </section>
+
+        <!-- problem section-->
+        <section id="problem">
+            <div class="container-fluid">
+                <h1 class="text-center">Problem</h1>
+                <div class="row justify-content-center">
+                    <!-- <div class="col-lg-4">
+                        <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+                    </div> -->
+
+                    <div class="col-10">
+                        <p> 
+                            The Curio robot consists of basic components - two motors, wheels, a battery, a control
+                            board, and a wooden frame and is meant to be low cost to be affordable by schools and
+                            students alike. But the platform can feel limiting at times and people regularly comment
+                            on the robot speed, or are confused by its design (e.g., which way is the front?). How
+                            might we design a new improved Curio? You will explore these questions using a
+                            development kit, called Smartibot, allowing your team to explore designs ideas quickly.
+                        </p>
+                    </div>
+                </div>
+        </section>
+                
+        <!-- load javascript after loading all html content -->
+        <script src="script/script.js"></script>
+        
     </body>
 </html>
