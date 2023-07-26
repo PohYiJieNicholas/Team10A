@@ -1,7 +1,15 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/edinburgh.jpg');
+    background: url('images/robots.jpg');
+    background-size:cover;
+    position:relative;
+}
+
+/* hero background image */
+.bgimage_brainstorm {
+    height:100vh;
+    background: url('images/Brainstorming.jpg');
     background-size:cover;
     position:relative;
 }
